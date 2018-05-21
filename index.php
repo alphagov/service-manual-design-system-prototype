@@ -1,1 +1,1 @@
-<?php header( 'Location: /govuk/service-manual.html' ) ; ?>
+<?php header( 'Location: /service-manual.html' ) ; ?>
