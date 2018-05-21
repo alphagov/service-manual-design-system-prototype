@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Meeting the accessibility standard, and how to test your service.">
+<meta name="govuk:taxon-slugs" content="technology-guidance-technology-guidance-apis,technology-guidance-technology-guidance-digital-inclusion">
+<meta name="govuk:taxon-slug" content="technology-guidance-technology-guidance-apis">
+<meta name="govuk:taxon-ids" content="f695028c-ca84-41e4-ba72-d17878eadf35,16bb50c0-2ca2-49e9-8b21-088789e66d5e">
+<meta name="govuk:taxon-id" content="f695028c-ca84-41e4-ba72-d17878eadf35">
+<meta name="govuk:themes" content="government/all, government/technology-guidance-technology-guidance-apis">
+<meta name="govuk:analytics:organisations" content="&lt;OT1056&gt;">
+<meta name="govuk:content-has-history" content="true">
+<meta name="govuk:content-id" content="62740d01-8a5f-4aee-9700-18aa314dceab">
+<meta name="govuk:navigation-document-type" content="other">
+<meta name="govuk:user-journey-stage" content="thing">
+<meta name="govuk:schema-name" content="service_manual_guide">
+<meta name="govuk:format" content="service_manual_guide">
+<meta name="csrf-token" content="CmL3KiNZoj3audz0sW6GuFFgkQ+fcV2A7Vf3cXNU7qjH3KAPG6AtWzMYCG/w6ktBhzpiZO0JsPm00WWHNx9XKw==">
+<meta name="csrf-param" content="authenticity_token">
+    <meta charset="utf-8">
+    <title>Making your service accessible: an introduction - Service Manual - GOV.UK</title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="../../static/govuk-template-c0b8ba8b1652aacad298d74f24752260187f538b50c40c2484f7f333cbc3cf2b.css"  >
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie6-2c1bb089ee71d4d70a08ba94e4b363a99542c8feddf3aa979bc4f8962aed5e02.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie7-062e553ef49a9f884a3a1f885c8a18e829b6557046b075e1384f6092a60151d1.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-11027733d1abeac34c7bf14e37fea30366ad3a87cfd7f7a084de3a3b4b838412.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="../../static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css"  >
+
+    <link rel="stylesheet" media="all" href="../../static/fonts-e9ec5a5f82e5c2a17927ce356e5a054cb28025ec1547ec5d00f5c98d2ec5e481.css"  >
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js"  ></script><![endif]-->
+
+    <link rel="shortcut icon" href="../../static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="../../static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../../static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="../../static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="../../static/core-layout-7b26f9c24748c421b0ec1ba9017a95cda64c54534db7ea974146900fe72e2d2b.css"  >
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie6-88a667d70be00013855b34edee7840a8ac446e62207f0642c42b2bcb9cefec1a.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie7-09674f7239c07fad034afd5de55706b00c3920b428bbe70e1c3f8106229bc93e.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie8-89f5c4f75d596f7be56cfa129311f353f4be3d2aa4235becd7ca6fefa1ec9773.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="../../static/core-layout-print-07d9f2ae45b9bf761acf17c7ec414a9493f1a7cf1c8278b7ad5497cdd73eee84.css"  >
+
+
+
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="../../service-manual-frontend/application-a300c891b7a6e1b0b9ee4144e2d03d7d0290c976ab38924434d9af97b92921bd.css">
+<!--<![endif]--><link rel="stylesheet" media="print" href="../../service-manual-frontend/print-0692e22cd92f395a0dbf0e94aaf6a0dd599c3fa3f66f55a7adbf2dd2ce9d8e1b.css">
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/application-ie6-87b394a7b6b077babb6324ab22efef4047b41fcb5ef5ef4af60d2df163311063.css" /><script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/application-ie7-b4480cc624cda1278dd3722fdf6103c7ccd81c5de204e7180d591411de97c104.css" /><script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/application-ie8-fffbaa98a1618117259ab7cb4c0ee6a64567a882fbfb74dcd776f6cd796c4d9b.css" /><script>var ieVersion = 8;</script><![endif]--><meta name="govuk:rendering-application" content="service-manual-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="making-your-service-accessible-an-introduction/index.html#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+        <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+    </div>
+
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="../../static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt=""> GOV.UK
+            </a>
+          </div>
+      <h1 class="header-title">Service Manual</h1>
+  
+            <a href="making-your-service-accessible-an-introduction/index.html#search" class="search-toggle js-header-toggle">Search</a>
+
+  <form id="search" class="site-search" action="https://www.gov.uk/search" method="get" role="search">
+    <div class="content">
+      <label for="site-search-text">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus">
+      <input class="submit" type="submit" value="Search">
+    </div>
+  <input type="hidden" name="filter_manual" value="/service-manual">
+</form>
+
+        </div>
+        
+      </div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      <div id="wrapper" class="direction-ltr">
+    <main role="main" id="content" lang="en">
+      <div class="full-page-width-wrapper">
+        <div class="govuk-beta-label">
+  <p>
+    <strong class="phase-tag">Beta</strong>
+    <span>
+          This is new guidance. Complete our quick 5-question survey to <a target="_blank" rel="noopener noreferrer" href="https://www.smartsurvey.co.uk/s/HGLV5/?c=/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction">help us improve it</a>.
+
+
+    </span>
+  </p>
+</div>
+
+      </div>
+      
+
+
+
+
+
+<div class="gem-c-breadcrumbs " data-module="track-click">
+  <ol>
+
+    <li class="gem-c-breadcrumbs--item ">
+        <a data-track-category="breadcrumbClicked" data-track-action="1" data-track-label="/service-manual" data-track-options='{"dimension28":"3","dimension29":"Service manual"}' class="" aria-current="false" href="../../service-manual.html">Service manual</a>
+    </li>
+
+    <li class="gem-c-breadcrumbs--item ">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/service-manual/helping-people-to-use-your-service" data-track-options='{"dimension28":"3","dimension29":"Accessibility and assisted digital"}' class="" aria-current="false" href="../helping-people-to-use-your-service.html">Accessibility and assisted digital</a>
+    </li>
+
+    <li class="gem-c-breadcrumbs--item ">
+        Making your service accessible: an introduction
+    </li>
+  </ol>
+</div>
+
+
+<!-- Page title and contact -->
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+    <div class="page-header">
+      <p class="page-header__context">Accessibility and assisted digital</p>
+      <h1 class="page-header__title">
+        Making your service accessible: an introduction
+      </h1>
+    </div>
+  </div>
+
+  <div class="column-third">
+
+    <div class="community-contact">
+      <p>
+        <a class="feedback" href="https://www.gov.uk/contact/govuk">Give feedback about this page</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Metadata-->
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <div class="metadata">
+      <dl>
+          <dt>Published by:</dt>
+            <dd>
+              <a href="../communities/accessibility-community.html">Accessibility community</a>
+            </dd>
+        <dt>Last updated:</dt>
+        <dd>
+          8 months ago
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+<div class="grid-row" data-module="highlight-active-section-heading">
+  <div class="column-third">
+
+    <!--  Page contents -->
+    <div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
+      <h2 class="page-contents__title">Page contents:</h2>
+      <ul class="page-contents__list">
+          <li><a href="making-your-service-accessible-an-introduction/index.html#meeting-government-accessibility-requirements">Meeting government accessibility requirements</a></li>
+          <li><a href="making-your-service-accessible-an-introduction/index.html#think-about-accessibility-from-the-start">Think about accessibility from the start</a></li>
+          <li><a href="making-your-service-accessible-an-introduction/index.html#researching-with-users-with-disabilities">Researching with users with disabilities</a></li>
+          <li><a href="making-your-service-accessible-an-introduction/index.html#what-to-do-in-discovery">What to do in discovery</a></li>
+          <li><a href="making-your-service-accessible-an-introduction/index.html#what-to-do-in-alpha">What to do in alpha</a></li>
+          <li><a href="making-your-service-accessible-an-introduction/index.html#what-to-do-in-beta">What to do in beta</a></li>
+          <li><a href="making-your-service-accessible-an-introduction/index.html#what-to-do-in-live">What to do in live</a></li>
+          <li><a href="making-your-service-accessible-an-introduction/index.html#make-non-digital-parts-of-your-service-accessible">Make non-digital parts of your service accessible</a></li>
+          <li><a href="making-your-service-accessible-an-introduction/index.html#further-reading">Further reading</a></li>
+          <li><a href="making-your-service-accessible-an-introduction/index.html#related-guides">Related guides</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="column-two-thirds">
+
+    <div class="govspeak-wrapper">
+      
+<div class="govuk-govspeak ">
+  <p>Your service must be accessible to everyone who needs it. If it isn’t, you may be in breach of the <a href="https://www.gov.uk/guidance/equality-act-2010-guidance">Equality Act 2010</a>.</p>
+
+<p>This means you need to start thinking about how users might access and use your service before you design or build anything.</p>
+
+<p>Accessibility isn’t the responsibility of just one person. Everyone on your team is responsible for making sure your service is accessible.</p>
+
+<h2 id="meeting-government-accessibility-requirements">Meeting government accessibility requirements</h2>
+
+<p>To meet government accessibility requirements, digital services must:</p>
+
+<ul>
+  <li>meet level AA of the <a href="understanding-wcag-20.html">Web Content Accessibility Guidelines (<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0)</a> as a minimum</li>
+  <li>work on the most commonly used <a href="../technology/designing-for-different-browsers-and-devices.html#testing-with-assistive-technologies">assistive technologies</a> - including screen magnifiers, screen readers and speech recognition tools</li>
+  <li>include people with disabilities in <a href="../user-research.html">user research</a>
+</li>
+</ul>
+
+<p>If you think that your service (or any part of it) can’t be made accessible, contact the Government Digital Service (<abbr title="Government Digital Service">GDS</abbr>) accessibility team for advice at <a href="mailto:accessibility@digital.cabinet-office.gov.uk">accessibility@digital.cabinet-office.gov.uk</a>.</p>
+
+<h2 id="think-about-accessibility-from-the-start">Think about accessibility from the start</h2>
+
+<p>In the UK, <a href="https://www.gov.uk/government/statistics/disability-facts-and-figures">1 in 5 people have a disability</a> - this could be visual, hearing, motor or cognitive (affecting memory and thinking).</p>
+
+<p>But the concept of accessibility doesn’t just apply to people with disabilities - all users will have different needs at different times and in different circumstances. Someone’s ability to use a service could be affected by their:</p>
+
+<ul>
+  <li>location - they could be in a noisy cafe, sunny park or area with slow wifi</li>
+  <li>health - they may be tired, recovering from a stroke or have a broken arm</li>
+  <li>equipment - they could be on a mobile phone or using an older browser</li>
+</ul>
+
+<p>Accessibility is about making sure your service can be used by as many people as possible. Thinking about this from the beginning will help you:</p>
+
+<ul>
+  <li>make sure that nobody is excluded</li>
+  <li>find out earlier if any parts of your service aren’t accessible - problems usually cost less to fix if you find them early</li>
+</ul>
+
+<p>Accessibility is different from <a href="../assisted-digital.html">assisted digital support</a>, which means helping users with low digital skills or limited access to the web.</p>
+
+<h2 id="researching-with-users-with-disabilities">Researching with users with disabilities</h2>
+
+<p>When doing research, you have to include users who have disabilities or use assistive technologies.</p>
+
+<p>You may need to pay for:</p>
+
+<ul>
+  <li>a <a href="../user-research/find-user-research-participants.html#finding-recruitment-agencies">recruitment agency</a> to help you find participants</li>
+  <li>expenses to help participants take part in research - this might include a helper, taxis, or someone to help with communication like a sign language interpreter</li>
+</ul>
+
+<p>Learn more about <a href="../user-research/find-user-research-participants.html">recruiting participants for user research</a>.</p>
+
+<h2 id="what-to-do-in-discovery">What to do in discovery</h2>
+
+<p>During discovery you should be learning how people with visual, hearing, motor and cognitive impairments might use your service, as well as the barriers they face.</p>
+
+<p>You can do this even before you do any user research by trying to understand the <a rel="external" href="https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/">range of abilities that users can have</a>.</p>
+
+<h2 id="what-to-do-in-alpha">What to do in alpha</h2>
+
+<p>During alpha, you should be thinking about whether what you’re designing meets the <a href="understanding-wcag-20.html#wcag-design-principles"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 design principles</a> - this will help you meet the needs of all your users.</p>
+
+<p>You should also start thinking about your accessibility audit. Even though you won’t need this until beta, it can take time to arrange. You may have someone in your department with the necessary skills and auditing experience to do this. If not, you will need to appoint an external accessibility specialist.</p>
+
+<p>You can ask your auditor to spend a couple of days during alpha reviewing your designs and <a href="../user-centred-design/working-with-prototypes.html">prototypes</a> for potential accessibility problems.</p>
+
+<p>You can also improve what you’re designing by <a href="../user-research/running-research-sessions-with-people-with-disabilities.html">running research sessions with users with disabilities</a>.</p>
+
+<h2 id="what-to-do-in-beta">What to do in beta</h2>
+
+<p>During beta, you need to start <a href="../technology/testing-for-accessibility.html">testing for accessibility</a>. Running a combination of manual and automated tests each time you develop a new feature means you can sort out issues that could be costly to fix at a later stage.</p>
+
+<p>Check what testing tools and software your team has access to in case you need to pay for some.</p>
+
+<p><a href="../user-research/running-research-sessions-with-people-with-disabilities.html">Running research sessions with users who have disabilities</a> will also help you check that what you’re building is accessible.</p>
+
+<h3 id="getting-an-accessibility-audit">Getting an accessibility audit</h3>
+
+<p>You must get an accessibility audit towards the end of beta, which will provide evidence at assessment that your service works with assistive technologies and meets <a href="understanding-wcag-20.html"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 level AA</a>. This can take time to arrange, so start planning for it during alpha.</p>
+
+<p>Your team should <a href="../technology/testing-for-accessibility.html#using-audit-results-to-fix-problems">use the audit results to fix problems</a>. You’ll also need a retest to check you’ve fixed everything, so make sure you leave enough time for this.</p>
+
+<h3 id="appointing-an-auditor">Appointing an auditor</h3>
+
+<p>If you don’t have anyone in your department with experience of doing accessibility audits, you can use the <a href="https://www.gov.uk/digital-marketplace">Digital Marketplace</a> to find an external supplier. Audits by external suppliers usually cost between £5,000 and £7,000.</p>
+
+<p>Your brief should explain that your service needs to be <a href="../technology/designing-for-different-browsers-and-devices.html#testing-with-assistive-technologies">tested with assistive technologies</a> and checked against <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 level AA.</p>
+
+<p>You should also include:</p>
+
+<ul>
+  <li>your service name and a description of what it’s for</li>
+  <li>the scale of your service - including the types of content and interactions you have, as well as common user journeys</li>
+  <li>how you want your audit results presented - you can ask for examples so you can work out what will be most useful to your team</li>
+  <li>the type of support you need - this might include help choosing what to audit, and help fixing any problems that are found</li>
+</ul>
+
+<p>When appointing an auditor, make sure they:</p>
+
+<ul>
+  <li>have extensive auditing experience</li>
+  <li>have in-depth knowledge of <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0</li>
+  <li>are experienced at testing with assistive technologies</li>
+  <li>will help you prioritise problems and suggest ways to fix them</li>
+</ul>
+
+<p>If you can, use someone with previous experience of auditing government services. You can also ask suppliers for references and example accessibility reports.</p>
+
+<p>Anyone carrying out an accessibility audit might find the following WC3 resources useful:</p>
+
+<ul>
+  <li><a rel="external" href="https://www.w3.org/TR/WCAG-EM/">guidance on evaluating whether a service meets <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0</a></li>
+  <li><a rel="external" href="https://www.w3.org/WAI/eval/report-tool/#/"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> report generator</a></li>
+</ul>
+
+<p>Learn more about <a href="../the-team/working-contractors-third-parties.html">working with contractors or third parties</a>.</p>
+
+<h2 id="what-to-do-in-live">What to do in live</h2>
+
+<p>It’s important to carry on testing and researching your service once it’s live.</p>
+
+<p>Check that any new features you add meet government accessibility requirements, and continue doing research with users with disabilities.</p>
+
+<p>If you make substantial changes to your service, you can get another audit to check you still meet government accessibility requirements.</p>
+
+<h2 id="make-non-digital-parts-of-your-service-accessible">Make non-digital parts of your service accessible</h2>
+
+<p>You should also make sure the non-digital parts of your service are accessible.
+For example, you should make sure that users who are deaf or have a speech impairment are offered a way to contact you (by text, email or in person with a British Sign Language translator or lip reader).</p>
+
+<p>If you have to send out letters as part of your service, make sure you can also provide these in alternative formats that are accessible (for example large print, braille or audio CD).</p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<p>You might find the following resources useful:</p>
+
+<ul>
+  <li>a <a rel="external" href="https://accessibility.blog.gov.uk/category/accessibility-and-me/">series of interviews with people with disabilities</a> to learn about the technology they use</li>
+  <li>a set of <a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">user profiles</a> which highlight the common barriers users face when accessing digital service</li>
+  <li>a blog post about the <a rel="external" href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/">dos and don’ts on designing for accessibility</a>
+</li>
+</ul>
+
+<p>You can also watch a series of videos produced by <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> about <a rel="external" href="https://www.w3.org/WAI/perspectives/">how accessible design can benefit people with disabilities</a>.</p>
+
+<h2 id="related-guides">Related guides</h2>
+
+<p>You might also find these guides useful:</p>
+
+<ul>
+  <li><a href="understanding-wcag-20.html">Understanding <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0</a></li>
+  <li><a href="../technology/testing-for-accessibility.html">Testing for accessibility</a></li>
+  <li><a href="../technology/designing-for-different-browsers-and-devices.html">Designing for different browsers and devices</a></li>
+  <li><a href="../user-research/how-user-research-improves-service-design.html">User research for government services: an introduction</a></li>
+</ul>
+
+
+</div>
+
+    </div>
+
+    <div class="change-history" data-module="toggle">
+      <div class="change-history__latest-change">
+        <dl>
+          <dt>Published by:</dt>
+            <dd>
+              <a href="../communities/accessibility-community.html">Accessibility community</a>
+            </dd>
+          <dt>Last update:</dt>
+          <dd>
+            <time datetime="2017-10-03T10:54:29+00:00" class="timestamp"> 3 October 2017</time>
+<p class="change-history__summary">
+  Guidance rewritten to clarify government accessibility requirements and what to do in each project phase.
+</p>
+
+          </dd>
+        </dl>
+      </div>
+      <p><a href="making-your-service-accessible-an-introduction/index.html#full-history" data-controls="full-history" data-expanded="false" role="button" aria-controls="full-history" aria-expanded="false">+ Show all page updates (2)</a></p>
+      <ol id="full-history" class="change-history__past js-hidden" aria-live="polite" role="region">
+        <li>
+          <time datetime="2016-03-09T12:05:13+00:00" class="timestamp"> 9 March 2016</time>
+<p class="change-history__summary">
+  Guidance first published
+</p>
+
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</div>
+
+    </main>
+
+      <div class="full-page-width-wrapper">
+  <div class="improve-this-page" data-module="improve-this-page">
+    <div class="improve-this-page__prompt js-prompt clearfix" tabindex="-1">
+      <h3 class="improve-this-page__is-useful-question">Is this page useful?</h3>
+      <a class="improve-this-page__page-is-useful-button js-page-is-useful" data-track-category="manualFeedbackForm" data-track-action="ffYesClick" href="https://www.gov.uk/contact/govuk">
+        Yes <span class="visually-hidden"> this page is useful</span>
+</a>      <a class="js-page-is-not-useful" data-track-category="manualFeedbackForm" data-track-action="ffNoClick" aria-controls="improveThisPageForm" aria-expanded="false" href="https://www.gov.uk/contact/govuk">
+        No <span class="visually-hidden"> this page is not useful</span>
+</a>      <a class="js-something-is-wrong improve-this-page__anything-wrong" data-track-category="manualFeedbackForm" data-track-action="ffWrongClick" aria-controls="improveThisPageForm" aria-expanded="false" href="https://www.gov.uk/contact/govuk">
+        Is there anything wrong with this page?
+</a>    </div>
+    <div id="improveThisPageForm" class="improve-this-page__form js-feedback-form js-hidden" data-track-category="manualFeedbackForm" data-track-action="ffFormSubmit">
+      <a href="making-your-service-accessible-an-introduction/index.html#" class="improve-this-page__close js-close-feedback-form" aria-controls="improveThisPageForm" aria-expanded="true">Close</a>
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <div class="js-errors"></div>
+          <form>
+            <input type="hidden" name="url" value="https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction">
+            <input type="hidden" name="user_agent" value="Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36">
+            <div class="form-group">
+              <label class="form-label-bold" for="description-field">
+                How should we improve this page?
+              </label>
+              <textarea id="description-field" class="form-control" name="description" rows="5" aria-required="true"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="name-field">
+                Name (optional)
+                <span class="form-hint">Include your name and email address if you'd like us to get back to you.</span>
+              </label>
+              <input id="name-field" class="form-control" type="text" name="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email-field">Email (optional)</label>
+              <input id="email-field" class="form-control" type="text" name="email">
+            </div>
+            <div>
+              <input class="button" type="submit" value="Send message">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="https://www.gov.uk/help">Help</a></li>
+  <li><a href="https://www.gov.uk/help/cookies">Cookies</a></li>
+  <li><a href="https://www.gov.uk/contact">Contact</a></li>
+  <li><a href="https://www.gov.uk/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="https://www.gov.uk/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="../../static/govuk-template-ae4c5d21c0a7cb5bc8926a9f491de4e410244403f66c72997210c281efb92d4f.js"  ></script>
+
+      <script src="../../static/libs/jquery/jquery-1.12.4-5f1157a433c276bcb98f3651434f7cb1f49ff45fe2ec2808b46ee088e61159b5.js"  ></script>
+<script src="../../static/header-footer-only-adeae172ff696beb46e8547b50ef61f0a383ba1f07a58a802e7ae8b54d8fd7bb.js"  ></script>
+<script src="../../static/surveys-4ba182ee79d0afd999fec6ffdfd59accce1e5d50f326c93edf82aa438c32dfc4.js"  ></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="../../service-manual-frontend/application-e47aec62c201636b5b94203bb32057a69146baab883a806db90521d0445d35ea.js"></script><script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Service manual","@id":"https://www.gov.uk/service-manual"}},{"@type":"ListItem","position":2,"item":{"name":"Accessibility and assisted digital","@id":"https://www.gov.uk/service-manual/helping-people-to-use-your-service"}},{"@type":"ListItem","position":3,"item":{"name":"Making your service accessible: an introduction"}}]}
+</script>
+</body>
+</html>

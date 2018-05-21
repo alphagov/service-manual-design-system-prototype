@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="How and when to use standups, retrospectives, sprint planning, team reviews, user stories, the backlog, and team walls.">
+<meta name="govuk:analytics:organisations" content="&lt;OT1056&gt;">
+<meta name="govuk:content-id" content="e3e6d495-f620-403c-9d7b-64b2ea364a75">
+<meta name="govuk:navigation-document-type" content="other">
+<meta name="govuk:user-journey-stage" content="thing">
+<meta name="govuk:schema-name" content="service_manual_guide">
+<meta name="govuk:format" content="service_manual_guide">
+<meta name="csrf-token" content="c685Re8LE7YJTRkkqQXEFgOKNsxUr4DVijKPzuIuL6ahcH+3GZkbekRCbbON9rClGazUuG8S5pfXmP+aTLc2Og==">
+<meta name="csrf-param" content="authenticity_token">
+    <meta charset="utf-8">
+    <title>Agile tools and techniques - Service Manual - GOV.UK</title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="../../static/govuk-template-c0b8ba8b1652aacad298d74f24752260187f538b50c40c2484f7f333cbc3cf2b.css"  >
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie6-2c1bb089ee71d4d70a08ba94e4b363a99542c8feddf3aa979bc4f8962aed5e02.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie7-062e553ef49a9f884a3a1f885c8a18e829b6557046b075e1384f6092a60151d1.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-11027733d1abeac34c7bf14e37fea30366ad3a87cfd7f7a084de3a3b4b838412.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="../../static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css"  >
+
+    <link rel="stylesheet" media="all" href="../../static/fonts-e9ec5a5f82e5c2a17927ce356e5a054cb28025ec1547ec5d00f5c98d2ec5e481.css"  >
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js"  ></script><![endif]-->
+
+    <link rel="shortcut icon" href="../../static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="../../static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../../static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="../../static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="../../static/core-layout-7b26f9c24748c421b0ec1ba9017a95cda64c54534db7ea974146900fe72e2d2b.css"  >
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie6-88a667d70be00013855b34edee7840a8ac446e62207f0642c42b2bcb9cefec1a.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie7-09674f7239c07fad034afd5de55706b00c3920b428bbe70e1c3f8106229bc93e.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie8-89f5c4f75d596f7be56cfa129311f353f4be3d2aa4235becd7ca6fefa1ec9773.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="../../static/core-layout-print-07d9f2ae45b9bf761acf17c7ec414a9493f1a7cf1c8278b7ad5497cdd73eee84.css"  >
+
+
+
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="../../service-manual-frontend/application-a300c891b7a6e1b0b9ee4144e2d03d7d0290c976ab38924434d9af97b92921bd.css">
+<!--<![endif]--><link rel="stylesheet" media="print" href="../../service-manual-frontend/print-0692e22cd92f395a0dbf0e94aaf6a0dd599c3fa3f66f55a7adbf2dd2ce9d8e1b.css">
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/application-ie6-87b394a7b6b077babb6324ab22efef4047b41fcb5ef5ef4af60d2df163311063.css" /><script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/application-ie7-b4480cc624cda1278dd3722fdf6103c7ccd81c5de204e7180d591411de97c104.css" /><script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/application-ie8-fffbaa98a1618117259ab7cb4c0ee6a64567a882fbfb74dcd776f6cd796c4d9b.css" /><script>var ieVersion = 8;</script><![endif]--><meta name="govuk:rendering-application" content="service-manual-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="agile-tools-techniques.html#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+        <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+    </div>
+
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="../../static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt=""> GOV.UK
+            </a>
+          </div>
+      <h1 class="header-title">Service Manual</h1>
+  
+            <a href="agile-tools-techniques.html#search" class="search-toggle js-header-toggle">Search</a>
+
+  <form id="search" class="site-search" action="https://www.gov.uk/search" method="get" role="search">
+    <div class="content">
+      <label for="site-search-text">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus">
+      <input class="submit" type="submit" value="Search">
+    </div>
+  <input type="hidden" name="filter_manual" value="/service-manual">
+</form>
+
+        </div>
+        
+      </div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      <div id="wrapper" class="direction-ltr">
+    <main role="main" id="content" lang="en">
+      <div class="full-page-width-wrapper">
+        <div class="govuk-beta-label">
+  <p>
+    <strong class="phase-tag">Beta</strong>
+    <span>
+          This is new guidance. Complete our quick 5-question survey to <a target="_blank" rel="noopener noreferrer" href="https://www.smartsurvey.co.uk/s/HGLV5/?c=/service-manual/agile-delivery/agile-tools-techniques">help us improve it</a>.
+
+
+    </span>
+  </p>
+</div>
+
+      </div>
+      
+
+
+
+
+
+<div class="gem-c-breadcrumbs " data-module="track-click">
+  <ol>
+
+    <li class="gem-c-breadcrumbs--item ">
+        <a data-track-category="breadcrumbClicked" data-track-action="1" data-track-label="/service-manual" data-track-options='{"dimension28":"3","dimension29":"Service manual"}' class="" aria-current="false" href="../../service-manual.html">Service manual</a>
+    </li>
+
+    <li class="gem-c-breadcrumbs--item ">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/service-manual/agile-delivery" data-track-options='{"dimension28":"3","dimension29":"Agile delivery"}' class="" aria-current="false" href="../phases.html">Agile delivery</a>
+    </li>
+
+    <li class="gem-c-breadcrumbs--item ">
+        Agile tools and techniques
+    </li>
+  </ol>
+</div>
+
+
+<!-- Page title and contact -->
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+    <div class="page-header">
+      <p class="page-header__context">Agile delivery</p>
+      <h1 class="page-header__title">
+        Agile tools and techniques
+      </h1>
+    </div>
+  </div>
+
+  <div class="column-third">
+
+    <div class="community-contact">
+      <p>
+        <a class="feedback" href="https://www.gov.uk/contact/govuk">Give feedback about this page</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Metadata-->
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <div class="metadata">
+      <dl>
+          <dt>Published by:</dt>
+            <dd>
+              <a href="../agile-delivery-community.html">Agile delivery community</a>
+            </dd>
+        <dt>Last updated:</dt>
+        <dd>
+          almost 2 years ago
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+<div class="grid-row" data-module="highlight-active-section-heading">
+  <div class="column-third">
+
+    <!--  Page contents -->
+    <div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
+      <h2 class="page-contents__title">Page contents:</h2>
+      <ul class="page-contents__list">
+          <li><a href="agile-tools-techniques.html#meeting-the-digital-service-standard">Meeting the Digital Service Standard</a></li>
+          <li><a href="agile-tools-techniques.html#introducing-agile-tools-and-techniques">Introducing agile tools and techniques</a></li>
+          <li><a href="agile-tools-techniques.html#daily-standup">Daily standup</a></li>
+          <li><a href="agile-tools-techniques.html#sprint-planning-meetings">Sprint planning meetings</a></li>
+          <li><a href="agile-tools-techniques.html#retrospective-meetings">Retrospective meetings</a></li>
+          <li><a href="agile-tools-techniques.html#team-review-show-and-tell">Team review (show and tell)</a></li>
+          <li><a href="agile-tools-techniques.html#user-stories">User stories</a></li>
+          <li><a href="agile-tools-techniques.html#the-backlog">The backlog</a></li>
+          <li><a href="agile-tools-techniques.html#team-walls">Team walls</a></li>
+          <li><a href="agile-tools-techniques.html#related-guides">Related guides</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="column-two-thirds">
+
+    <div class="govspeak-wrapper">
+      
+<div class="govuk-govspeak ">
+  <p>Using agile tools and techniques can help your digital service team to:</p>
+
+<ul>
+  <li>self-organise and plan</li>
+  <li>communicate (within the team and with the rest of your organisation)</li>
+  <li>continuously improve the way you work</li>
+  <li>get support from senior responsible officers (SROs) and service managers</li>
+</ul>
+
+<h2 id="meeting-the-digital-service-standard">Meeting the Digital Service Standard</h2>
+
+<p>To pass <a href="../service-standard/use-agile-methods.html">point 4 (use agile methods)</a> in your <a href="../digital-by-default/assessments-at-gds.html">service assessments</a>, you must show how your team is using agile tools and techniques to build and run your service.</p>
+
+<h2 id="introducing-agile-tools-and-techniques">Introducing agile tools and techniques</h2>
+
+<p>This guide describes some of the most common agile tools and techniques that service teams use. You can use others if your team decides they’ll be useful.</p>
+
+<p>You might also hear these called ‘agile ceremonies and artefacts’.</p>
+
+<h2 id="daily-standup">Daily standup</h2>
+
+<p>The standup is a daily meeting for the team to discuss what they’re working on and whether there are any problems or dependencies they need to resolve (for example, needing help from someone else).</p>
+
+<p>Standups should last no longer than 15 minutes. You should hold them at the same time every day. It’s best if you do it standing up in front of your <a href="team-wall.html">team wall</a>.</p>
+
+<p><a rel="external" href="https://www.youtube.com/watch?v=Uwl-z1QZsLc">good and bad standups</a> - a video presentation by Adam Maddison, Head of Agile Delivery at Government Digital Service (GDS)</p>
+
+<p>See: <a rel="external" href="https://en.wikipedia.org/wiki/Stand-up_meeting">standup meetings</a> on Wikipedia</p>
+
+<h2 id="sprint-planning-meetings">Sprint planning meetings</h2>
+
+<p>Sprint planning meetings are a feature of <a href="agile-methodologies.html">Scrum</a>. You should hold them at the start of each <a rel="external" href="http://www.scrumguides.org/scrum-guide.html#events-sprint">sprint.</a></p>
+
+<p>At a sprint planning meeting, the team decides what to work on next and how they’ll do it.</p>
+
+<p>The length of the meeting will depend on how long your sprint is.</p>
+
+<p>See: <a rel="external" href="http://www.scrumguides.org/scrum-guide.html#events-planning">sprint planning</a> by Ken Schwaber and Jeff Sutherland, the creators of Scrum</p>
+
+<h2 id="retrospective-meetings">Retrospective meetings</h2>
+
+<p>Retrospectives, sometimes called ‘retros’, are regular meetings where your whole team talks about what’s going well and what isn’t.</p>
+
+<p>Teams usually hold retros at the end of an iteration (for example a sprint) and use them to talk about the work from that period of time.</p>
+
+<p>The point of a retro is to fix any problems in the team and to make sure you keep doing the things that are working.</p>
+
+<h3 id="how-to-run-a-retro">How to run a retro</h3>
+
+<p>One person should host the retro and decide on questions for the team to talk about.</p>
+
+<p>If you’re hosting, pick broad questions that allow the team to set the agenda, rather than strictly setting it yourself.</p>
+
+<p>Retros should have an open atmosphere where every member of the team can speak honestly and feel confident that their colleagues will listen.</p>
+
+<p>Allow 60 to 90 minutes for the meeting and use a private space where you can stick post-it notes to the wall.</p>
+
+<p>A basic retro could follow these steps:</p>
+
+<ol>
+  <li>The host explains the questions at the beginning and sticks a post-it note to the wall for each question.</li>
+  <li>Each team member writes down one or more answers for each question on post-it notes and sticks them to the right part of the wall.</li>
+  <li>The group discusses issues as they come up, or at the end.</li>
+  <li>The host decides on actions to fix any problems raised, and assigns them to members of the team.</li>
+</ol>
+
+<p>You could choose to cover 3 or 4 of the following topics:</p>
+
+<ul>
+  <li>what went well in the last iteration</li>
+  <li>what went badly in the last iteration</li>
+  <li>what’s puzzling the team or what the team doesn’t understand</li>
+  <li>who the team wants to thank (eg other members of the team)</li>
+</ul>
+
+<p>These topics are just examples, there are many different types of retro. You can <a rel="external" href="http://retrospectivewiki.org/index.php?title=Agile_Retrospective_Resource_Wiki">find more in the Retrospective wiki</a>.</p>
+
+<p>If you’re hosting the retro, you should pick topics which you think will prompt useful discussions in your team, for example on transparency, team learning or your working process.</p>
+
+<h3 id="make-a-list-of-actions">Make a list of actions</h3>
+
+<p>You should use the information you get from your retro to improve your work and your working environment.</p>
+
+<p>Make a list of actions that you’ll carry out to fix the problems that your team highlighted and assign them to people in the team.</p>
+
+<p>You should aim to get the actions done before the next retro.</p>
+
+<h2 id="team-review-show-and-tell">Team review (show and tell)</h2>
+
+<p>The team review is a regular meeting which gives team members the opportunity to demonstrate their work. It can also be called a sprint review or a show and tell.</p>
+
+<p>You can invite stakeholders like directors or suppliers to this meeting and use it to tell them about the user stories you’ve completed or other work you’ve done.</p>
+
+<p>You’ll need a screen to show your work and enough space for people to join in.</p>
+
+<p>If your service is part of a larger organisation or programme you may want to open up your review to the rest of the organisation every few weeks.</p>
+
+<p>This gives you the opportunity to show the most important work you’ve done, talk about what you’ve learned, explain your plans for the next few weeks and answer questions. It also gives other teams the chance to see how your work relates to theirs.</p>
+
+<p>See: <a rel="external" href="https://mojdigital.blog.gov.uk/2014/07/28/getting-stakeholders-more-involved-in-sprint-reviews/">how a Ministry of Justice team got stakeholders involved in sprint reviews</a></p>
+
+<h2 id="user-stories">User stories</h2>
+
+<p>User stories are a way for your team to briefly record the things you need to do to build the service. You can use them to prompt discussions about features when you’re ready to start work on them.</p>
+
+<p>See: <a href="writing-user-stories.html">writing user stories</a></p>
+
+<h2 id="the-backlog">The backlog</h2>
+
+<p>Your team will have a product backlog where you’ll store the user stories you haven’t started work on yet in order of priority. If you’re following Scrum methodology you’ll also have a <a rel="external" href="http://www.scrumguides.org/scrum-guide.html#artifacts-sprintbacklog">sprint backlog</a> to store the stories the team has agreed to work on in that sprint.</p>
+
+<p>See:</p>
+
+<ul>
+  <li>
+<a href="create-agile-working-environment.html">Creating an agile working environment</a> for more information about tools that can help you manage your backlog</li>
+  <li>
+<a rel="external" href="http://www.scrumguides.org/scrum-guide.html#artifacts-productbacklog">product backlog</a> by Ken Schwaber and Jeff Sutherland, the creators of Scrum</li>
+</ul>
+
+<h2 id="team-walls">Team walls</h2>
+
+<p>Your team wall is a wall near where you sit on which you keep a visual record of your work.</p>
+
+<p>The wall shows what your team has done, what they’re currently doing and the work still to do.</p>
+
+<p>It helps your team to collaborate and allows other people in the organisation to see what you’re doing.</p>
+
+<p>See:</p>
+
+<ul>
+  <li><a href="team-wall.html">Set up a team wall</a></li>
+  <li><a href="create-agile-working-environment.html">Creating an agile working environment</a></li>
+</ul>
+
+<h2 id="related-guides">Related guides</h2>
+
+<p>You may also find these guides useful:</p>
+
+<ul>
+  <li><a href="agile-methodologies.html">Agile methods: an introduction</a></li>
+  <li><a href="create-agile-working-environment.html">Creating an agile working environment</a></li>
+</ul>
+
+</div>
+
+    </div>
+
+    <div class="change-history" data-module="toggle">
+      <div class="change-history__latest-change">
+        <dl>
+          <dt>Published by:</dt>
+            <dd>
+              <a href="../agile-delivery-community.html">Agile delivery community</a>
+            </dd>
+          <dt>Last update:</dt>
+          <dd>
+            <time datetime="2016-05-23T09:53:15+00:00" class="timestamp">23 May 2016</time>
+<p class="change-history__summary">
+  Guidance first published
+</p>
+
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </main>
+
+      <div class="full-page-width-wrapper">
+  <div class="improve-this-page" data-module="improve-this-page">
+    <div class="improve-this-page__prompt js-prompt clearfix" tabindex="-1">
+      <h3 class="improve-this-page__is-useful-question">Is this page useful?</h3>
+      <a class="improve-this-page__page-is-useful-button js-page-is-useful" data-track-category="manualFeedbackForm" data-track-action="ffYesClick" href="https://www.gov.uk/contact/govuk">
+        Yes <span class="visually-hidden"> this page is useful</span>
+</a>      <a class="js-page-is-not-useful" data-track-category="manualFeedbackForm" data-track-action="ffNoClick" aria-controls="improveThisPageForm" aria-expanded="false" href="https://www.gov.uk/contact/govuk">
+        No <span class="visually-hidden"> this page is not useful</span>
+</a>      <a class="js-something-is-wrong improve-this-page__anything-wrong" data-track-category="manualFeedbackForm" data-track-action="ffWrongClick" aria-controls="improveThisPageForm" aria-expanded="false" href="https://www.gov.uk/contact/govuk">
+        Is there anything wrong with this page?
+</a>    </div>
+    <div id="improveThisPageForm" class="improve-this-page__form js-feedback-form js-hidden" data-track-category="manualFeedbackForm" data-track-action="ffFormSubmit">
+      <a href="agile-tools-techniques.html#" class="improve-this-page__close js-close-feedback-form" aria-controls="improveThisPageForm" aria-expanded="true">Close</a>
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <div class="js-errors"></div>
+          <form>
+            <input type="hidden" name="url" value="https://www.gov.uk/service-manual/agile-delivery/agile-tools-techniques">
+            <input type="hidden" name="user_agent" value="Wget/1.19.5 (darwin15.6.0)">
+            <div class="form-group">
+              <label class="form-label-bold" for="description-field">
+                How should we improve this page?
+              </label>
+              <textarea id="description-field" class="form-control" name="description" rows="5" aria-required="true"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="name-field">
+                Name (optional)
+                <span class="form-hint">Include your name and email address if you'd like us to get back to you.</span>
+              </label>
+              <input id="name-field" class="form-control" type="text" name="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email-field">Email (optional)</label>
+              <input id="email-field" class="form-control" type="text" name="email">
+            </div>
+            <div>
+              <input class="button" type="submit" value="Send message">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="https://www.gov.uk/help">Help</a></li>
+  <li><a href="https://www.gov.uk/help/cookies">Cookies</a></li>
+  <li><a href="https://www.gov.uk/contact">Contact</a></li>
+  <li><a href="https://www.gov.uk/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="https://www.gov.uk/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="../../static/govuk-template-ae4c5d21c0a7cb5bc8926a9f491de4e410244403f66c72997210c281efb92d4f.js"  ></script>
+
+      <script src="../../static/libs/jquery/jquery-1.12.4-5f1157a433c276bcb98f3651434f7cb1f49ff45fe2ec2808b46ee088e61159b5.js"  ></script>
+<script src="../../static/header-footer-only-adeae172ff696beb46e8547b50ef61f0a383ba1f07a58a802e7ae8b54d8fd7bb.js"  ></script>
+<script src="../../static/surveys-4ba182ee79d0afd999fec6ffdfd59accce1e5d50f326c93edf82aa438c32dfc4.js"  ></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="../../service-manual-frontend/application-e47aec62c201636b5b94203bb32057a69146baab883a806db90521d0445d35ea.js"></script><script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Service manual","@id":"https://www.gov.uk/service-manual"}},{"@type":"ListItem","position":2,"item":{"name":"Agile delivery","@id":"https://www.gov.uk/service-manual/agile-delivery"}},{"@type":"ListItem","position":3,"item":{"name":"Agile tools and techniques"}}]}
+</script>
+</body>
+</html>
